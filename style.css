@@ -1,0 +1,175 @@
+/*
+ * Arquivo: styles.css
+ * Estilos para a Calculadora de Médias Escolares
+ */
+
+/* Estilos Gerais do Corpo da Página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e9ecef; /* Fundo mais claro e suave */
+    margin: 0;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* Container Principal do Formulário e Resultados */
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Sombra mais destacada */
+    max-width: 650px;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+h1 {
+    text-align: center;
+    color: #007bff; /* Cor principal azul */
+    margin-bottom: 30px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+/* Estilização dos Grupos de Input */
+.input-group {
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    border-left: 5px solid #007bff20;
+    padding-left: 15px;
+}
+
+.input-group label {
+    flex-basis: 60%;
+    font-weight: 600;
+    color: #343a40; /* Texto escuro */
+    font-size: 1.05em;
+}
+
+.input-group input {
+    flex-basis: 35%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 17px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+/* Estilização do Botão de Cálculo */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745; /* Verde de sucesso para a ação */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 19px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: background-color 0.3s ease, transform 0.1s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+/* Área de Resultados */
+#resultados {
+    margin-top: 35px;
+    padding-top: 25px;
+    border-top: 3px double #adb5bd; /* Linha divisória */
+}
+
+#resultados h2 {
+    color: #343a40;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+
+/* Estilização da Box de Semestre */
+.semestre-box {
+    border: 1px solid #007bff40;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    background-color: #f8f9fa; /* Fundo leve para o box */
+    transition: box-shadow 0.3s ease;
+}
+
+.semestre-box:hover {
+    box-shadow: 0 2px 10px rgba(0, 123, 255, 0.1);
+}
+
+.semestre-box h3 {
+    color: #007bff;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+
+/* Itens de Mídia (Bimestres e Semestres) */
+.media-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    font-size: 1.1em;
+}
+
+.media-item span:first-child {
+    color: #495057; /* Nome do Bimestre/Semestre */
+}
+
+.media-item span:last-child {
+    font-weight: bold;
+    color: #dc3545; /* Cor de destaque para a média */
+}
+
+/* Separador para a Média Semestral */
+.separator {
+    border-bottom: 2px dashed #007bff60;
+    margin: 10px 0;
+}
+
+/* Destaque para a Média Semestral dentro da box */
+.semestre-box strong {
+    color: #007bff; /* Azul para o resultado do Semestre */
+    font-size: 1.2em;
+}
+
+/* Média Final (Maior Destaque) */
+.final-media {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #28a745; 
+    margin-top: 20px;
+    text-align: center;
+    padding: 15px;
+    border: 3px solid #28a745;
+    border-radius: 8px;
+    background-color: #d4edda; /* Fundo suave de sucesso */
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+}
